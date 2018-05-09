@@ -1,77 +1,85 @@
-# Dirbtinis intelekats ir žinių sistemos
+# Dirbtinis intelektas ir žinių sistemos
 
-## Paieška būsenų erdvėje (Chapter 3)
+## 1. Paieška būsenų erdvėje (Chapter 3)
 
-- Something
+- **Paieška** - procesas, kurio metu bandoma rasti seką veiksmų, vedančių prie užsibrėžto tikslo.
+- **Būsenų erdvė** apibūdinama 4 savybėmis [N A S GD]:
+  - N - sistemos būsenos
+  - A - sprendimo proceso žingsniai
+  - S - pirminės būsenos
+  - GD - būsenos, kurios laikomos uždavinio sprendimu
+- Būsenų erdvė atvaizduojama grafu (paieškos medžiu)
 
-## Paieška į plotį (Chapter 3)
+## 2. Paieška į plotį (Chapter 3)
 
-- Something
+- **Breadth-first search** - a simple strategy in which the root node is expanded first, then all the successors of the root node are expanded next, then their successors, and so on. In general, all the nodes are expanded at a given depth in the search tree before any nodes at the next level are expanded.
+- Naudojama duomenų struktūra - **Queue** (FIFO)
 
-## Paieška į gylį (Chapter 3)
+## 3. Paieška į gylį (Chapter 3)
 
-- Something
+- **Depth-first search** always expands the deepest node in the current frontier of the search tree. The progress of the search is illustrated in Figure 3.16. The search proceeds immediately to the deepest level of the search tree, where the nodes have no successors. As those nodes are expanded, they are dropped from the frontier, so then the search “backs up” to the next deepest node that still has unexplored successors.
+- Naudojama duomenų struktūra - **Stack** (LIFO)
 
-## Euristiniai paieškos algoritmai (Chapter 3)
-
-- Something
-
-## Žaidimai ir paieška (Chapter 5)
-
-- Something
-
-## Problemos nusakomos ribojimo sąlygomis (Chapter 6)
-
-- Something
-
-## Žinių vaizdavimas (Chapter 7)
+## 4. Euristiniai paieškos algoritmai (Chapter 3)
 
 - Something
 
-## Loginis išvedimas (Chapter 7)
+## 5. Žaidimai ir paieška (Chapter 5)
 
 - Something
 
-## Predikatų (Pirmos-Eilės) Logika (Chapter 8)
+## 6. Problemos nusakomos ribojimo sąlygomis (Chapter 6)
 
 - Something
 
-## Praktiniai pavyzdžiai:  WordNet ; DBpedia ; SUMO/MILO ; Wolfram Alpha’s (Skaidrės ir WEB)
+## 7. Žinių vaizdavimas (Chapter 7)
 
 - Something
 
-## Planavimo uždavinių kalbos (Chapter 10)
+## 8. Loginis išvedimas (Chapter 7)
 
 - Something
 
-## AI uždaviniai ir neapibrėžtumas (Chapter 13)
+## 9. Predikatų (Pirmos-Eilės) Logika (Chapter 8)
 
 - Something
 
-## Bajeso tinklo semantika (Chapter 14)
+## 10. Praktiniai pavyzdžiai:  WordNet ; DBpedia ; SUMO/MILO ; Wolfram Alpha’s (Skaidrės ir WEB)
 
 - Something
 
-## Markovo stacionarūs procesai (Chapter 15)
+## 11. Planavimo uždavinių kalbos (Chapter 10)
 
 - Something
 
-## Mokymasis naudojant stebėjimus (Chapter 18)
+## 12. AI uždaviniai ir neapibrėžtumas (Chapter 13)
 
 - Something
 
-## Apriori Algoritmas (Skaidrės)
+## 13. Bajeso tinklo semantika (Chapter 14)
 
 - Something
 
-## Sprendimų medžiai (Chapter 18)
+## 14. Markovo stacionarūs procesai (Chapter 15)
 
 - Something
 
-## Natūralios kalbos skaičiavimai (Chapter 22 ir 23)
+## 15. Mokymasis naudojant stebėjimus (Chapter 18)
 
 - Something
 
-## Neuroniniai tinklai (Chapter 18.7)
+## 16. Apriori Algoritmas (Skaidrės)
+
 - Something
 
+## 17. Sprendimų medžiai (Chapter 18)
+
+- Something
+
+## 19. Neuroniniai tinklai (Chapter 18.7)
+
+- Something
+
+## 18. Natūralios kalbos skaičiavimai (Chapter 22 ir 23)
+
+- Something
