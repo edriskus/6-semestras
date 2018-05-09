@@ -1,0 +1,60 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_45583.vilkas.vgtu.lt on node(s): quad-0-9 quad-0-8
+Prologue Complete
+
+Starting Job:
+Sun Apr 29 16:06:57 EEST 2018
+
+Running script on...
+quad-0-9.local
+
+Allocated nodes:
+quad-0-9
+quad-0-8
+
+>-----
+Trumpiausias atstumas nuo 0 iki 500 yra lygus 4
+N=1000;t=2.31975;T=2.35591;d=98.4655%
+-----
+Trumpiausias atstumas nuo 0 iki 550 yra lygus 4
+N=1100;t=7.94057;T=8.07642;d=98.3178%
+-----
+Trumpiausias atstumas nuo 0 iki 600 yra lygus 4
+N=1200;t=15.9251;T=15.9666;d=99.7401%
+-----
+Trumpiausias atstumas nuo 0 iki 650 yra lygus 4
+N=1300;t=15.1536;T=15.3025;d=99.0272%
+-----
+Trumpiausias atstumas nuo 0 iki 700 yra lygus 4
+N=1400;t=40.2054;T=40.262;d=99.8594%
+-----
+Trumpiausias atstumas nuo 0 iki 750 yra lygus 3
+N=1500;t=11.819;T=11.8848;d=99.446%
+-----
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+N=1600;t=8.0799;T=8.15188;d=99.117%
+-----
+Trumpiausias atstumas nuo 0 iki 850 yra lygus 4
+N=1700;t=9.85791;T=9.93939;d=99.1802%
+-----
+Trumpiausias atstumas nuo 0 iki 900 yra lygus 4
+N=1800;t=10.5959;T=10.6867;d=99.1501%
+-----
+Trumpiausias atstumas nuo 0 iki 950 yra lygus 4
+N=1900;t=9.55739;T=9.65629;d=98.9758%
+-----
+Trumpiausias atstumas nuo 0 iki 1000 yra lygus 4
+N=2000;t=11.0676;T=11.1776;d=99.0156%
+-----<
+>-----<
+
+Job finished:
+Sun Apr 29 16:09:22 EEST 2018
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Removing /scratch/PBS_TEMP_45583.vilkas.vgtu.lt on node(s): quad-0-9 quad-0-8
+Floaters flushed on node(s): quad-0-9 quad-0-8
+Epilogue Complete

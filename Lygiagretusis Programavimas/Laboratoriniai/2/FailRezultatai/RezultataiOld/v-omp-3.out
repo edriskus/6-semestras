@@ -1,0 +1,131 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+
+Creating temporary directory /scratch/PBS_TEMP_45470.vilkas.vgtu.lt on node(s): quad-0-8 quad-0-7
+Prologue Complete
+
+Starting Job:
+Sat Apr 28 21:37:54 EEST 2018
+
+Running script on...
+quad-0-8.local
+
+Allocated nodes:
+quad-0-8
+quad-0-7
+
+
+-----
+
+-----
+N = 50
+Trumpiausias atstumas nuo 0 iki 25 yra lygus 37
+Trumpiausias Kelias: 0 -> 26 -> 43 -> 36 -> 6 -> 25
+
+Laikas 0.485844
+Visas laikas 0.486117
+Skaičiavimai vyko 99.9438% viso laiko
+-----
+N = 50
+Trumpiausias atstumas nuo 0 iki 25 yra lygus 37
+Trumpiausias Kelias: 0 -> 26 -> 43 -> 36 -> 6 -> 25
+
+Laikas 0.196486
+Visas laikas 0.196874
+Skaičiavimai vyko 99.8029% viso laiko
+-----
+N = 100
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+Trumpiausias Kelias: 0 -> 63 -> 31 -> 50
+
+Laikas 0.336982
+Visas laikas 0.337864
+Skaičiavimai vyko 99.7389% viso laiko
+-----
+N = 100
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+Trumpiausias Kelias: 0 -> 63 -> 31 -> 50
+
+Laikas 0.451373
+Visas laikas 0.452255
+Skaičiavimai vyko 99.805% viso laiko
+-----
+N = 200
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+Trumpiausias Kelias: 0 -> 130 -> 181 -> 163 -> 102 -> 35 -> 100
+
+Laikas 1.26956
+Visas laikas 1.27288
+Skaičiavimai vyko 99.7391% viso laiko
+-----
+N = 200
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+Trumpiausias Kelias: 0 -> 130 -> 181 -> 163 -> 102 -> 35 -> 100
+
+Laikas 1.44058
+Visas laikas 1.44386
+Skaičiavimai vyko 99.7726% viso laiko
+-----
+N = 400
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+Trumpiausias Kelias: 0 -> 63 -> 309 -> 365 -> 359 -> 200
+
+Laikas 2.69118
+Visas laikas 2.70441
+Skaičiavimai vyko 99.5109% viso laiko
+-----
+N = 400
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+Trumpiausias Kelias: 0 -> 63 -> 309 -> 365 -> 359 -> 200
+
+Laikas 4.22501
+Visas laikas 4.23814
+Skaičiavimai vyko 99.6902% viso laiko
+-----
+N = 800
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+Trumpiausias Kelias: 0 -> 400
+
+Laikas 14.3496
+Visas laikas 14.4028
+Skaičiavimai vyko 99.6306% viso laiko
+-----
+N = 800
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+Trumpiausias Kelias: 0 -> 400
+
+Laikas 12.6264
+Visas laikas 12.6795
+Skaičiavimai vyko 99.5811% viso laiko
+-----
+N = 1600
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+Trumpiausias Kelias: 0 -> 400 -> 1125 -> 800
+
+Laikas 97.8504
+Visas laikas 98.0804
+Skaičiavimai vyko 99.7655% viso laiko
+-----
+N = 1600
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+Trumpiausias Kelias: 0 -> 400 -> 1125 -> 800
+
+Laikas 98.1591
+Visas laikas 98.372
+Skaičiavimai vyko 99.7835% viso laiko
+-----
+=>> PBS: job killed: walltime 606 exceeded limit 600
+mpirun: killing job...
+
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 20975 on node quad-0-8.local exited on signal 0 (Unknown signal 0).
+--------------------------------------------------------------------------
+mpirun: clean termination accomplished
+
+2 total processes killed (some possibly by mpirun during cleanup)
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Removing /scratch/PBS_TEMP_45470.vilkas.vgtu.lt on node(s): quad-0-8 quad-0-7
+Floaters flushed on node(s):
+Epilogue Complete

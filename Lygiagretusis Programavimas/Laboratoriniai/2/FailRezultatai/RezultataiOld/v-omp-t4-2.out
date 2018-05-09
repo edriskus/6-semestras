@@ -1,0 +1,127 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+
+Creating temporary directory /scratch/PBS_TEMP_45490.vilkas.vgtu.lt on node(s): quad-0-8 quad-0-7
+Prologue Complete
+
+Starting Job:
+Sat Apr 28 22:13:51 EEST 2018
+
+Running script on...
+quad-0-8.local
+
+Allocated nodes:
+quad-0-8
+quad-0-7
+
+
+-----
+
+-----
+N = 50
+Trumpiausias atstumas nuo 0 iki 25 yra lygus 37
+Trumpiausias Kelias: 0 -> 26 -> 43 -> 36 -> 6 -> 25
+
+Laikas 0.166857
+Visas laikas 0.167036
+Skaičiavimai vyko 99.8928% viso laiko
+-----
+N = 50
+Trumpiausias atstumas nuo 0 iki 25 yra lygus 37
+Trumpiausias Kelias: 0 -> 26 -> 43 -> 36 -> 6 -> 25
+
+Laikas 0.17783
+Visas laikas 0.178096
+Skaičiavimai vyko 99.8506% viso laiko
+-----
+N = 100
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+Trumpiausias Kelias: 0 -> 63 -> 31 -> 50
+
+Laikas 0.779957
+Visas laikas 0.780842
+Skaičiavimai vyko 99.8867% viso laiko
+-----
+N = 100
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+Trumpiausias Kelias: 0 -> 63 -> 31 -> 50
+
+Laikas 0.805439
+Visas laikas 0.806315
+Skaičiavimai vyko 99.8914% viso laiko
+-----
+N = 200
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+Trumpiausias Kelias: 0 -> 130 -> 181 -> 163 -> 102 -> 35 -> 100
+
+Laikas 2.15084
+Visas laikas 2.15421
+Skaičiavimai vyko 99.8439% viso laiko
+-----
+N = 200
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+Trumpiausias Kelias: 0 -> 130 -> 181 -> 163 -> 102 -> 35 -> 100
+
+Laikas 2.13461
+Visas laikas 2.13797
+Skaičiavimai vyko 99.8429% viso laiko
+-----
+N = 400
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+Trumpiausias Kelias: 0 -> 63 -> 309 -> 365 -> 359 -> 200
+
+Laikas 5.46404
+Visas laikas 5.47734
+Skaičiavimai vyko 99.7572% viso laiko
+-----
+N = 400
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+Trumpiausias Kelias: 0 -> 63 -> 309 -> 365 -> 359 -> 200
+
+Laikas 5.50998
+Visas laikas 5.52327
+Skaičiavimai vyko 99.7595% viso laiko
+-----
+N = 800
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+Trumpiausias Kelias: 0 -> 400
+
+Laikas 15.0253
+Visas laikas 15.0835
+Skaičiavimai vyko 99.6146% viso laiko
+-----
+N = 800
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+Trumpiausias Kelias: 0 -> 400
+
+Laikas 20.5815
+Visas laikas 20.6365
+Skaičiavimai vyko 99.7335% viso laiko
+-----
+N = 1600
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+Trumpiausias Kelias: 0 -> 400 -> 1125 -> 800
+
+Laikas 64.8687
+Visas laikas 65.1192
+Skaičiavimai vyko 99.6154% viso laiko
+-----
+
+N = 1600
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+Trumpiausias Kelias: 0 -> 400 -> 1125 -> 800
+
+Laikas 59.8704
+Visas laikas 60.3446
+Skaičiavimai vyko 99.2142% viso laiko
+-----
+
+
+Job finished:
+Sat Apr 28 22:15:22 EEST 2018
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Removing /scratch/PBS_TEMP_45490.vilkas.vgtu.lt on node(s): quad-0-8 quad-0-7
+Floaters flushed on node(s):
+Epilogue Complete

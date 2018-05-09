@@ -1,0 +1,79 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_45805.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Wed May  2 23:40:22 EEST 2018
+
+Running script on...
+i7-1-9.local
+
+GPU Device 0: "GeForce 9400 GT" with compute capability 1.1
+[CUDA Matrix Multiply Using Version 0 ] - Starting ...
+CPU processing time: 411.783997 (ms), GFLOPS: 0.244457 
+Processing time: 9.660000 (ms), GFLOPS: 10.420631 
+Host to Device memory cp time: 0.334000 (ms) 
+Device to Host memory cp time: 9.300000 (ms) 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 1 ] - Starting ...
+CPU processing time: 416.329010 (ms), GFLOPS: 0.241788 
+Processing time: 208.095001 (ms), GFLOPS: 0.483737 
+Host to Device memory cp time: 0.278000 (ms) 
+Device to Host memory cp time: 207.811005 (ms) 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 2 ] - Starting ...
+CPU processing time: 415.851013 (ms), GFLOPS: 0.242066 
+Processing time: 15.540999 (ms), GFLOPS: 6.477273 
+Host to Device memory cp time: 0.272000 (ms) 
+Device to Host memory cp time: 15.257000 (ms) 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 3 ] - Starting ...
+CPU processing time: 416.480988 (ms), GFLOPS: 0.241700 
+Processing time: 45.459999 (ms), GFLOPS: 2.214327 
+Host to Device memory cp time: 0.273000 (ms) 
+Device to Host memory cp time: 45.180000 (ms) 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 4 ] - Starting ...
+CPU processing time: 415.727997 (ms), GFLOPS: 0.242137 
+Processing time: 9.500000 (ms), GFLOPS: 10.596136 
+Host to Device memory cp time: 0.267000 (ms) 
+Device to Host memory cp time: 9.227000 (ms) 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 5 ] - Starting ...
+CPU processing time: 417.330994 (ms), GFLOPS: 0.241207 
+Processing time: 6.532000 (ms), GFLOPS: 15.410792 
+Host to Device memory cp time: 0.285000 (ms) 
+Device to Host memory cp time: 6.240000 (ms) 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 6 ] - Starting ...
+CPU processing time: 416.648987 (ms), GFLOPS: 0.241602 
+Processing time: 5.470000 (ms), GFLOPS: 18.402798 
+Host to Device memory cp time: 0.271000 (ms) 
+Device to Host memory cp time: 5.192000 (ms) 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 7 ] - Starting ...
+CPU processing time: 415.868011 (ms), GFLOPS: 0.242056 
+Processing time: 5.553000 (ms), GFLOPS: 18.127732 
+Host to Device memory cp time: 0.298000 (ms) 
+Device to Host memory cp time: 5.248000 (ms) 
+
+Total Errors = 0 
+
+Job finished:
+Wed May  2 23:40:26 EEST 2018
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_45805.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s):
+Epilogue Complete

@@ -1,0 +1,55 @@
+1) Užduotis:
+
+	***Tic Tac Toe***
+	
+	Pirminė būsena yra žaidimo lentos kintamasis 
+	užpildytas vienodomis reikšmėmis, kurios žymį 
+	tuščią langelį.
+	
+	Galimos trys galinės būsenos(Lygesios, laimėjo 1 žaidėjas, laimėjo 2 žaidėjas).
+	Galinė būsena yra kai žaidimo baigtis yra
+	lygesios, t.y. lentos kintamasis nebeturi
+	reikšmių žyminčių tuščią langelį ir to pačio
+	žaidėjo kintamojo reikšmės nesikartoja 3 kartus
+	tame pačiame stulpelyje, eilutėje ar įstrižainėje.
+	Taip pat galinė būsena yra kai vieno žaidėjo kintamasis
+	kartojasi 3 kartus viename stulpelyje, eilutėje arba įstrižainėje.
+	
+	***Map Coloring***
+	
+	Pirminė būsena visi kintamieji neturi spalvos reikšmės, t.y.
+	žemėlapis nenuspalvintas
+	
+	Galinė būsena yra kai žemėlapis nuspalvintas ir gretimi regionai
+	yra skirtingų spalvų.
+	
+2) Užduotis
+
+	***Be Euristikų***
+	
+	Į plotį:
+	Stengiamasi patikrinti mazgus esančius arčiausiai pradinės būsenos
+	ir juos patikrinus leidžiamasi į kitą lygį.
+	
+	Į gylį:
+	Leidžiamasi paieškos medžiu kuo gyliau ir pasiekus aklavietę
+	grįžtama vienu žingsniu atgal ir leidžiamasi vėl gylyn dar
+	netikrintais mazgais.
+	
+	***Su Euristikomis***
+	
+	Tic Tac Toe
+	
+	Naudojama paieška į gylį ir Minimax algoritmas, kurio esmė pagal žaidėjo
+	pasirinktą ėjimą patikrinti galimas žaidimo baigtis leidžiantis gilyn ir 
+	pasirinktį tą ėjimą, kuris turi didžiausią šansą laimėti.
+	
+	Map Coloring
+	
+	Naudojama paiška į gylį su Backtracking algoritmu(grįžimu atgal). Algoritmo esmė
+	yra vieno kintamojo priskyrimas ir pasiekus aklavietę atmetamas šis sprendimas.
+	Šiuo atveju yra pradedama spalvinti regionus raudona spalva, tačiau netinkinant
+	galinio sprendimo atmetamas dalinis sprendimas, ko pasekoje grįžtama atgal ir ieškomas
+	kitas sprendimas.
+	
+3) Užduotis	

@@ -1,0 +1,23 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_39763.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Wed Apr 26 10:53:40 EEST 2017
+
+Running script on...
+i7-1-9.local
+
+./a.out: error while loading shared libraries: libcudart.so.4: cannot open shared object file: No such file or directory
+
+Job finished:
+Wed Apr 26 10:53:40 EEST 2017
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_39763.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete

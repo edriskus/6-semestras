@@ -1,0 +1,130 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_45516.vilkas.vgtu.lt on node(s): quad-0-7 quad-0-6
+Prologue Complete
+
+Starting Job:
+Sun Apr 29 13:27:51 EEST 2018
+
+Running script on...
+quad-0-7.local
+
+Allocated nodes:
+quad-0-7
+quad-0-6
+
+>-----
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+N=100;t=0.005865;T=0.006473;d=90.6071%
+>-----
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+N=100;t=0.005831;T=0.006428;d=90.7125%
+-----
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+N=200;t=0.043238;T=0.044644;d=96.8506%
+-----
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+N=200;t=0.044307;T=0.045832;d=96.6726%
+-----
+Trumpiausias atstumas nuo 0 iki 150 yra lygus 9
+N=300;t=0.141392;T=0.144429;d=97.8972%
+-----
+Trumpiausias atstumas nuo 0 iki 150 yra lygus 9
+N=300;t=0.144714;T=0.148509;d=97.4446%
+-----
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+N=400;t=0.355812;T=0.361188;d=98.5116%
+-----
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+N=400;t=0.354451;T=0.359901;d=98.4857%
+-----
+Trumpiausias atstumas nuo 0 iki 250 yra lygus 3
+N=500;t=0.715043;T=0.723735;d=98.799%
+-----
+Trumpiausias atstumas nuo 0 iki 250 yra lygus 3
+N=500;t=0.71363;T=0.722227;d=98.8097%
+-----
+Trumpiausias atstumas nuo 0 iki 300 yra lygus 5
+N=600;t=1.23537;T=1.24817;d=98.9746%
+-----
+Trumpiausias atstumas nuo 0 iki 300 yra lygus 5
+N=600;t=1.23078;T=1.24334;d=98.9898%
+-----
+Trumpiausias atstumas nuo 0 iki 350 yra lygus 5
+N=700;t=1.94789;T=1.96531;d=99.1136%
+-----
+Trumpiausias atstumas nuo 0 iki 350 yra lygus 5
+N=700;t=1.9823;T=2.00009;d=99.1107%
+-----
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+N=800;t=3.00103;T=3.02483;d=99.2133%
+-----
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+N=800;t=3.06722;T=3.09047;d=99.2479%
+-----
+Trumpiausias atstumas nuo 0 iki 450 yra lygus 5
+N=900;t=4.17266;T=4.2024;d=99.2922%
+-----
+Trumpiausias atstumas nuo 0 iki 450 yra lygus 5
+N=900;t=4.41685;T=4.44975;d=99.2608%
+-----
+Trumpiausias atstumas nuo 0 iki 500 yra lygus 4
+N=1000;t=5.92219;T=5.95893;d=99.3834%
+-----
+Trumpiausias atstumas nuo 0 iki 500 yra lygus 4
+N=1000;t=5.73503;T=5.77303;d=99.3419%
+-----
+Trumpiausias atstumas nuo 0 iki 550 yra lygus 4
+N=1100;t=7.61698;T=7.66213;d=99.4108%
+-----
+Trumpiausias atstumas nuo 0 iki 550 yra lygus 4
+N=1100;t=7.53286;T=7.57736;d=99.4127%
+-----
+Trumpiausias atstumas nuo 0 iki 600 yra lygus 4
+N=1200;t=9.70595;T=9.75862;d=99.4602%
+-----
+Trumpiausias atstumas nuo 0 iki 600 yra lygus 4
+N=1200;t=9.75799;T=9.81085;d=99.4612%
+-----
+Trumpiausias atstumas nuo 0 iki 650 yra lygus 4
+N=1300;t=12.2911;T=12.3526;d=99.5025%
+-----
+Trumpiausias atstumas nuo 0 iki 650 yra lygus 4
+N=1300;t=12.3349;T=12.3965;d=99.5032%
+-----
+Trumpiausias atstumas nuo 0 iki 700 yra lygus 4
+N=1400;t=14.7651;T=14.836;d=99.5219%
+-----
+Trumpiausias atstumas nuo 0 iki 700 yra lygus 4
+N=1400;t=15.5681;T=15.6381;d=99.5524%
+-----
+Trumpiausias atstumas nuo 0 iki 750 yra lygus 3
+N=1500;t=19.6166;T=19.6897;d=99.6288%
+-----
+Trumpiausias atstumas nuo 0 iki 750 yra lygus 3
+N=1500;t=27.0195;T=27.1042;d=99.6875%
+-----
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+N=1600;t=21.5285;T=21.6153;d=99.5986%
+-----
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+N=1600;t=30.8114;T=30.969;d=99.4912%
+-----
+Trumpiausias atstumas nuo 0 iki 850 yra lygus 4
+N=1700;t=37.3038;T=37.4083;d=99.7208%
+mpirun: killing job...
+
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 28356 on node quad-0-7.local exited on signal 0 (Unknown signal 0).
+--------------------------------------------------------------------------
+mpirun: clean termination accomplished
+
+2 total processes killed (some possibly by mpirun during cleanup)
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_45516.vilkas.vgtu.lt on node(s): quad-0-7 quad-0-6
+Floaters flushed on node(s):
+Epilogue Complete

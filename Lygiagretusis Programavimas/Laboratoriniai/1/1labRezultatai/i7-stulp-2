@@ -1,0 +1,54 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_43366.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Mon Mar  5 13:09:42 EET 2018
+
+Running script on...
+i7-1-9.local
+
+N = 100 : 9e-06 : 2.22222e+09
+N = 200 : 3.8e-05 : 2.10526e+09
+N = 400 : 0.000167 : 1.91617e+09
+N = 800 : 0.003279 : 3.90363e+08
+N = 1600 : 0.019913 : 2.57118e+08
+
+Job finished:
+Mon Mar  5 13:09:42 EET 2018
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_43366.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_43366.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Mon Mar  5 13:14:46 EET 2018
+
+Running script on...
+i7-1-9.local
+
+N = 100 : 1.6e-05 : 1.25e+09
+N = 200 : 3.6e-05 : 2.22222e+09
+N = 400 : 0.000167 : 1.91617e+09
+N = 800 : 0.003269 : 3.91557e+08
+N = 1600 : 0.019972 : 2.56359e+08
+
+Job finished:
+Mon Mar  5 13:14:47 EET 2018
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_43366.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete

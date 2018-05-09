@@ -1,0 +1,53 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_43368.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+PBS: chdir to '/home/prif1' failed: No such file or directory
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_43368.vilkas.vgtu.lt on node(s):su: warning: cannot change directory to /home/prif1: No such file or directory
+Could not create directory '/home/prif1/.ssh'.
+Failed to add the host to the list of known hosts (/home/prif1/.ssh/known_hosts).
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,gssapi-with-mic,password).
+su: warning: cannot change directory to /home/prif1: No such file or directory
+Could not create directory '/home/prif1/.ssh'.
+Failed to add the host to the list of known hosts (/home/prif1/.ssh/known_hosts).
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,gssapi-with-mic,password).
+ i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_43368.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Mon Mar  5 15:32:05 EET 2018
+
+Running script on...
+i7-1-9.local
+
+N = 100 : 1e-05 : 2e+09
+N = 200 : 3.8e-05 : 2.10526e+09
+N = 400 : 0.000167 : 1.91617e+09
+N = 800 : 0.003279 : 3.90363e+08
+N = 1600 : 0.019953 : 2.56603e+08
+
+Job finished:
+Mon Mar  5 15:32:05 EET 2018
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_43368.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete

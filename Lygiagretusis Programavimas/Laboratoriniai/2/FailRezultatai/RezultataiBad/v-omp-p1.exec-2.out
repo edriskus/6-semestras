@@ -1,0 +1,148 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+
+Creating temporary directory /scratch/PBS_TEMP_45515.vilkas.vgtu.lt on node(s): quad-0-7 quad-0-6
+Prologue Complete
+
+Starting Job:
+Sun Apr 29 13:22:32 EEST 2018
+
+Running script on...
+quad-0-7.local
+
+Allocated nodes:
+quad-0-7
+quad-0-6
+
+>-----
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+N=100;t=0.006352;T=0.006852;d=92.7029%
+-----
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+N=200;t=0.044679;T=0.046037;d=97.0502%
+-----
+Trumpiausias atstumas nuo 0 iki 150 yra lygus 9
+N=300;t=0.142143;T=0.144833;d=98.1427%
+>-----
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+N=100;t=0.005792;T=0.006248;d=92.7017%
+-----
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+N=200;t=0.042679;T=0.043888;d=97.2453%
+-----
+Trumpiausias atstumas nuo 0 iki 150 yra lygus 9
+N=300;t=0.137903;T=0.140533;d=98.1286%
+-----
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+N=400;t=0.327043;T=0.331971;d=98.5155%
+-----
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+N=400;t=0.321695;T=0.326415;d=98.554%
+-----
+Trumpiausias atstumas nuo 0 iki 250 yra lygus 3
+N=500;t=0.617082;T=0.624512;d=98.8103%
+-----
+Trumpiausias atstumas nuo 0 iki 250 yra lygus 3
+N=500;t=0.739881;T=0.748032;d=98.9103%
+-----
+Trumpiausias atstumas nuo 0 iki 300 yra lygus 5
+N=600;t=1.07797;T=1.08897;d=98.9899%
+-----
+Trumpiausias atstumas nuo 0 iki 300 yra lygus 5
+N=600;t=1.11335;T=1.12458;d=99.0014%
+-----
+Trumpiausias atstumas nuo 0 iki 350 yra lygus 5
+N=700;t=1.76453;T=1.78027;d=99.116%
+-----
+Trumpiausias atstumas nuo 0 iki 350 yra lygus 5
+N=700;t=2.93276;T=2.94818;d=99.4768%
+-----
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+N=800;t=5.50898;T=5.53013;d=99.6174%
+-----
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+N=800;t=5.17795;T=5.21805;d=99.2317%
+-----
+Trumpiausias atstumas nuo 0 iki 450 yra lygus 5
+N=900;t=7.24897;T=7.30359;d=99.2521%
+-----
+Trumpiausias atstumas nuo 0 iki 450 yra lygus 5
+N=900;t=7.21043;T=7.26224;d=99.2866%
+-----
+Trumpiausias atstumas nuo 0 iki 500 yra lygus 4
+N=1000;t=10.2017;T=10.263;d=99.4028%
+-----
+Trumpiausias atstumas nuo 0 iki 500 yra lygus 4
+N=1000;t=9.77701;T=9.84131;d=99.3465%
+-----
+Trumpiausias atstumas nuo 0 iki 550 yra lygus 4
+N=1100;t=12.1882;T=12.2592;d=99.4211%
+-----
+Trumpiausias atstumas nuo 0 iki 550 yra lygus 4
+N=1100;t=12.7408;T=12.8137;d=99.4313%
+-----
+Trumpiausias atstumas nuo 0 iki 600 yra lygus 4
+N=1200;t=16.3313;T=16.4201;d=99.4596%
+-----
+Trumpiausias atstumas nuo 0 iki 600 yra lygus 4
+N=1200;t=16.1252;T=16.2151;d=99.4457%
+-----
+Trumpiausias atstumas nuo 0 iki 650 yra lygus 4
+N=1300;t=20.4564;T=20.5563;d=99.5137%
+-----
+Trumpiausias atstumas nuo 0 iki 650 yra lygus 4
+N=1300;t=20.556;T=20.6547;d=99.5222%
+-----
+Trumpiausias atstumas nuo 0 iki 700 yra lygus 4
+N=1400;t=25.8789;T=25.9929;d=99.5615%
+-----
+Trumpiausias atstumas nuo 0 iki 700 yra lygus 4
+N=1400;t=26.4181;T=26.5388;d=99.5449%
+-----
+Trumpiausias atstumas nuo 0 iki 750 yra lygus 3
+N=1500;t=30.9476;T=31.0791;d=99.577%
+-----
+Trumpiausias atstumas nuo 0 iki 750 yra lygus 3
+N=1500;t=39.3959;T=39.5321;d=99.6552%
+-----
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+N=1600;t=39.263;T=39.4083;d=99.6312%
+-----
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+N=1600;t=43.1867;T=43.3326;d=99.6633%
+-----
+Trumpiausias atstumas nuo 0 iki 850 yra lygus 4
+N=1700;t=44.7415;T=44.913;d=99.6181%
+-----
+Trumpiausias atstumas nuo 0 iki 850 yra lygus 4
+N=1700;t=43.8939;T=44.0693;d=99.602%
+-----
+Trumpiausias atstumas nuo 0 iki 900 yra lygus 4
+N=1800;t=61.5985;T=61.7797;d=99.7067%
+-----
+Trumpiausias atstumas nuo 0 iki 900 yra lygus 4
+N=1800;t=51.7444;T=51.9341;d=99.6348%
+-----
+Trumpiausias atstumas nuo 0 iki 950 yra lygus 4
+N=1900;t=40.8122;T=41.0171;d=99.5003%
+-----
+Trumpiausias atstumas nuo 0 iki 950 yra lygus 4
+N=1900;t=44.9278;T=45.1297;d=99.5526%
+-----
+Trumpiausias atstumas nuo 0 iki 1000 yra lygus 4
+N=2000;t=43.6425;T=43.7865;d=99.6711%
+-----<
+-----
+Trumpiausias atstumas nuo 0 iki 1000 yra lygus 4
+N=2000;t=43.8298;T=43.9837;d=99.6501%
+-----<
+
+Job finished:
+Sun Apr 29 13:28:42 EEST 2018
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_45515.vilkas.vgtu.lt on node(s): quad-0-7 quad-0-6
+Floaters flushed on node(s):
+Epilogue Complete

@@ -1,0 +1,61 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_39769.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Wed Apr 26 11:42:15 EEST 2017
+
+Running script on...
+i7-1-9.local
+
+./a.out Starting...
+
+ CUDA Device Query (Runtime API) version (CUDART static linking)
+
+Detected 1 CUDA Capable device(s)
+
+Device 0: "GeForce 9400 GT"
+  CUDA Driver Version / Runtime Version          6.5 / 4.0
+  CUDA Capability Major/Minor version number:    1.1
+  GPU Max Clock rate:                            1625 MHz (1.62 GHz)
+  Memory Clock rate:                             0 Mhz
+  Memory Bus Width:                              4200470-bit
+  L2 Cache Size:                                 32767 bytes
+  Maximum Texture Dimension Size (x,y,z)         1D=(8192), 2D=(65536, 32768), 3D=(2048, 2048, 2048)
+  Maximum Layered 1D Texture Size, (num) layers  1D=(8192), 512 layers
+  Maximum Layered 2D Texture Size, (num) layers  2D=(8192, 8192), 512 layers
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       16384 bytes
+  Total number of registers available per block: 8192
+  Warp size:                                     32
+  Maximum number of threads per multiprocessor:  768
+  Maximum number of threads per block:           512
+  Max dimension size of a thread block (x,y,z): (512, 512, 64)
+  Max dimension size of a grid size    (x,y,z): (65535, 65535, 1)
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             256 bytes
+  Concurrent copy and kernel execution:          Yes with 1 copy engine(s)
+  Run time limit on kernels:                     No
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support:                        Disabled
+  Device supports Unified Addressing (UVA):      No
+  Device PCI Domain ID / Bus ID / location ID:   0 / 1 / 0
+  Compute Mode:
+     < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 6.5, CUDA Runtime Version = 4.0, NumDevs = 1, Device0 = GeForce 9400 GT
+Result = PASS
+
+Job finished:
+Wed Apr 26 11:42:16 EEST 2017
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_39769.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete

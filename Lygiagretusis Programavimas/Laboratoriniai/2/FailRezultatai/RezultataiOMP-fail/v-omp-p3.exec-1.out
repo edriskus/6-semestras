@@ -1,0 +1,87 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+
+Creating temporary directory /scratch/PBS_TEMP_45545.vilkas.vgtu.lt on node(s): quad-0-9 quad-0-8
+Prologue Complete
+
+Starting Job:
+Sun Apr 29 13:40:24 EEST 2018
+
+Running script on...
+quad-0-9.local
+
+Allocated nodes:
+quad-0-9
+quad-0-8
+
+>-----
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+N=100;t=0.663452;T=0.664064;d=99.9078%
+-----
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+N=200;t=1.34515;T=1.34857;d=99.7471%
+-----
+Trumpiausias atstumas nuo 0 iki 150 yra lygus 9
+N=300;t=2.10674;T=2.11363;d=99.6743%
+-----
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+N=400;t=2.96817;T=2.981;d=99.5697%
+-----
+Trumpiausias atstumas nuo 0 iki 250 yra lygus 3
+N=500;t=3.94852;T=3.96813;d=99.506%
+-----
+Trumpiausias atstumas nuo 0 iki 300 yra lygus 5
+N=600;t=5.10424;T=5.13214;d=99.4564%
+-----
+Trumpiausias atstumas nuo 0 iki 350 yra lygus 5
+N=700;t=6.46982;T=6.5082;d=99.4103%
+-----
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+N=800;t=8.01327;T=8.06278;d=99.386%
+-----
+Trumpiausias atstumas nuo 0 iki 450 yra lygus 5
+N=900;t=9.93389;T=9.99793;d=99.3595%
+-----
+Trumpiausias atstumas nuo 0 iki 500 yra lygus 4
+N=1000;t=11.6334;T=11.7107;d=99.3401%
+-----
+Trumpiausias atstumas nuo 0 iki 550 yra lygus 4
+N=1100;t=8.24194;T=8.39921;d=98.1276%
+-----
+Trumpiausias atstumas nuo 0 iki 600 yra lygus 4
+N=1200;t=14.8288;T=14.9609;d=99.1171%
+-----
+Trumpiausias atstumas nuo 0 iki 650 yra lygus 4
+N=1300;t=20.1171;T=20.2472;d=99.3576%
+-----
+Trumpiausias atstumas nuo 0 iki 700 yra lygus 4
+N=1400;t=23.8704;T=24.0311;d=99.3313%
+-----
+Trumpiausias atstumas nuo 0 iki 750 yra lygus 3
+N=1500;t=27.8538;T=28.0278;d=99.3792%
+-----
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+N=1600;t=32.5879;T=32.7858;d=99.3964%
+-----
+Trumpiausias atstumas nuo 0 iki 850 yra lygus 4
+N=1700;t=37.5913;T=37.815;d=99.4085%
+-----
+Trumpiausias atstumas nuo 0 iki 900 yra lygus 4
+N=1800;t=40.66;T=40.9134;d=99.3806%
+-----
+Trumpiausias atstumas nuo 0 iki 950 yra lygus 4
+N=1900;t=48.7919;T=49.079;d=99.415%
+-----
+Trumpiausias atstumas nuo 0 iki 1000 yra lygus 4
+N=2000;t=55.6947;T=56.0036;d=99.4484%
+-----<
+
+Job finished:
+Sun Apr 29 13:46:29 EEST 2018
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_45545.vilkas.vgtu.lt on node(s): quad-0-9 quad-0-8
+Floaters flushed on node(s):
+Epilogue Complete

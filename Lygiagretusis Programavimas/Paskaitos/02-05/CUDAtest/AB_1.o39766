@@ -1,0 +1,62 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_39766.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Wed Apr 26 11:05:13 EEST 2017
+
+Running script on...
+i7-1-9.local
+
+[Matrix Multiply Using CUDA Version 0 ] - Starting ...
+cudaGetDevice returned error code 35, line(99)
+cudaGetDeviceProperties returned error code 35, line(112)
+Processing time: 0.000000 (ms), GFLOPS: inf 
+
+[Matrix Multiply Using CUDA Version 1 ] - Starting ...
+cudaGetDevice returned error code 35, line(99)
+cudaGetDeviceProperties returned error code 35, line(112)
+Processing time: 0.000000 (ms), GFLOPS: inf 
+
+[Matrix Multiply Using CUDA Version 2 ] - Starting ...
+cudaGetDevice returned error code 35, line(99)
+cudaGetDeviceProperties returned error code 35, line(112)
+Processing time: 0.000000 (ms), GFLOPS: inf 
+
+[Matrix Multiply Using CUDA Version 3 ] - Starting ...
+cudaGetDevice returned error code 35, line(99)
+cudaGetDeviceProperties returned error code 35, line(112)
+Processing time: 0.000000 (ms), GFLOPS: inf 
+
+[Matrix Multiply Using CUDA Version 4 ] - Starting ...
+cudaGetDevice returned error code 35, line(99)
+cudaGetDeviceProperties returned error code 35, line(112)
+Processing time: 0.000000 (ms), GFLOPS: inf 
+
+[Matrix Multiply Using CUDA Version 5 ] - Starting ...
+cudaGetDevice returned error code 35, line(99)
+cudaGetDeviceProperties returned error code 35, line(112)
+Processing time: 0.000000 (ms), GFLOPS: inf 
+
+[Matrix Multiply Using CUDA Version 6 ] - Starting ...
+cudaGetDevice returned error code 35, line(99)
+cudaGetDeviceProperties returned error code 35, line(112)
+Processing time: 0.000000 (ms), GFLOPS: inf 
+
+[Matrix Multiply Using CUDA Version 7 ] - Starting ...
+cudaGetDevice returned error code 35, line(99)
+cudaGetDeviceProperties returned error code 35, line(112)
+Processing time: 0.000000 (ms), GFLOPS: inf 
+
+
+Job finished:
+Wed Apr 26 11:05:13 EEST 2017
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_39766.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete

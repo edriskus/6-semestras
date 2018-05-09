@@ -1,0 +1,23 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_39772.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Wed Apr 26 12:29:00 EEST 2017
+
+Running script on...
+i7-1-9.local
+
+/opt/torque/mom_priv/jobs/39772.vilkas.vgtu.lt.SC: line 105: 26796 Segmentation fault      ./a.out
+
+Job finished:
+Wed Apr 26 12:29:01 EEST 2017
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_39772.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete

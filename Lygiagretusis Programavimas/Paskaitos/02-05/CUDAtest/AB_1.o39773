@@ -1,0 +1,63 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_39773.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Wed Apr 26 12:29:40 EEST 2017
+
+Running script on...
+i7-1-9.local
+
+GPU Device 0: "GeForce 9400 GT" with compute capability 1.1
+[CUDA Matrix Multiply Using Version 0 ] - Starting ...
+CPU processing time: 417.037994 (ms), GFLOPS: 0.241377 
+Processing time: 9.658999 (ms), GFLOPS: 10.421711 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 1 ] - Starting ...
+CPU processing time: 416.147003 (ms), GFLOPS: 0.241894 
+Processing time: 228.513000 (ms), GFLOPS: 0.440515 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 2 ] - Starting ...
+CPU processing time: 416.171997 (ms), GFLOPS: 0.241879 
+Processing time: 16.104000 (ms), GFLOPS: 6.250826 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 3 ] - Starting ...
+CPU processing time: 417.673004 (ms), GFLOPS: 0.241010 
+Processing time: 45.449001 (ms), GFLOPS: 2.214863 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 4 ] - Starting ...
+CPU processing time: 416.626007 (ms), GFLOPS: 0.241615 
+Processing time: 9.524000 (ms), GFLOPS: 10.569435 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 5 ] - Starting ...
+CPU processing time: 416.795013 (ms), GFLOPS: 0.241518 
+Processing time: 6.506000 (ms), GFLOPS: 15.472379 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 6 ] - Starting ...
+CPU processing time: 417.670990 (ms), GFLOPS: 0.241011 
+Processing time: 5.481000 (ms), GFLOPS: 18.365864 
+
+Total Errors = 0 
+[CUDA Matrix Multiply Using Version 7 ] - Starting ...
+CPU processing time: 417.434998 (ms), GFLOPS: 0.241147 
+Processing time: 5.599000 (ms), GFLOPS: 17.978800 
+
+Total Errors = 0 
+
+Job finished:
+Wed Apr 26 12:29:45 EEST 2017
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_39773.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete

@@ -1,0 +1,27 @@
+Prologue Initiated
+Stopping cpuspeed daemon
+Disabling ondemand cpu frequency scaling: [  OK  ]
+Creating temporary directory /scratch/PBS_TEMP_43373.vilkas.vgtu.lt on node(s): i7-1-9
+Prologue Complete
+
+Starting Job:
+Mon Mar  5 15:50:18 EET 2018
+
+Running script on...
+i7-1-9.local
+
+N = 100 : 2.7e-05 : 7.40741e+08
+N = 200 : 3.6e-05 : 2.22222e+09
+N = 400 : 0.000142 : 2.25352e+09
+N = 800 : 0.000581 : 2.2031e+09
+N = 1600 : 0.002508 : 2.04147e+09
+
+Job finished:
+Mon Mar  5 15:51:22 EET 2018
+
+Epilogue Initiated
+Starting cpuspeed daemon
+Enabling ondemand cpu frequency scaling: [  OK  ]
+Removing /scratch/PBS_TEMP_43373.vilkas.vgtu.lt on node(s): i7-1-9
+Floaters flushed on node(s): i7-1-9
+Epilogue Complete

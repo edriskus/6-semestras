@@ -1,0 +1,59 @@
+
+-----
+N = 50
+Trumpiausias atstumas nuo 0 iki 25 yra lygus 37
+Trumpiausias Kelias: 0 -> 26 -> 43 -> 36 -> 6 -> 25
+
+Laikas 0.00144257
+Visas laikas 0.0015981
+Skaičiavimai vyko 90.2683% viso laiko
+-----
+N = 100
+Trumpiausias atstumas nuo 0 iki 50 yra lygus 6
+Trumpiausias Kelias: 0 -> 63 -> 31 -> 50
+
+Laikas 0.00956871
+Visas laikas 0.00999553
+Skaičiavimai vyko 95.7299% viso laiko
+-----
+N = 200
+Trumpiausias atstumas nuo 0 iki 100 yra lygus 7
+Trumpiausias Kelias: 0 -> 130 -> 181 -> 163 -> 102 -> 35 -> 100
+
+Laikas 0.0702922
+Visas laikas 0.0717513
+Skaičiavimai vyko 97.9664% viso laiko
+-----
+N = 400
+Trumpiausias atstumas nuo 0 iki 200 yra lygus 7
+Trumpiausias Kelias: 0 -> 63 -> 309 -> 365 -> 359 -> 200
+
+Laikas 0.558188
+Visas laikas 0.563828
+Skaičiavimai vyko 98.9997% viso laiko
+-----
+N = 800
+Trumpiausias atstumas nuo 0 iki 400 yra lygus 1
+Trumpiausias Kelias: 0 -> 400
+
+Laikas 4.44234
+Visas laikas 4.46459
+Skaičiavimai vyko 99.5016% viso laiko
+-----
+N = 1600
+Trumpiausias atstumas nuo 0 iki 800 yra lygus 3
+Trumpiausias Kelias: 0 -> 400 -> 1125 -> 800
+
+Laikas 34.5583
+Visas laikas 34.6495
+Skaičiavimai vyko 99.7368% viso laiko
+-----
+N = 3200
+Trumpiausias atstumas nuo 0 iki 1600 yra lygus 2
+Trumpiausias Kelias: 0 -> 1862 -> 1600
+
+Laikas 276.16
+Visas laikas 276.51
+Skaičiavimai vyko 99.8731% viso laiko
+-----
+
