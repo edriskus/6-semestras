@@ -143,13 +143,13 @@
   - **X<sub>t</sub>** - laiko momentu t esančių būsenos kintamųjų rinkinys (nežinomos reikšmės)
   - **a:b** - seka nuo a iki b
   - **X<sub>a:b</sub>** - X reikšmės nuo X<sub>a</sub> iki X<sub>b</sub>
-  - **P(X<sub>t</sub> | X<sub>0:t-1</sub>)** - Sąlyginė tikimybė (t.y., tikimybė, kad reikšmė bus X<sub>t</sub> priklauso nuo reikšmių X<sub>0:t-1</sub>)
+  - **P(X<sub>t</sub> \| X<sub>0:t-1</sub>)** - Sąlyginė tikimybė (t.y., tikimybė, kad reikšmė bus X<sub>t</sub> priklauso nuo reikšmių X<sub>0:t-1</sub>)
 - **Markovo prielaida** - "ateities būsena priklauso tik nuo **baigtinio ir nekintančio** skaičiaus ankstesnių būsenų"
 - **Markovo procesai** - Markovo prielaidą tenkinantys procesai
 - Yra skirtingų rūšių Markovo procesų:
-  - **Pirmos eilės** Markovo procesai - ateities būsena priklauso tik nuo dabartinės būsenos, bet ne nuo kitų ankstesnių, t.y., **P(X<sub>t</sub> | X<sub>t-1</sub>)**
+  - **Pirmos eilės** Markovo procesai - ateities būsena priklauso tik nuo dabartinės būsenos, bet ne nuo kitų ankstesnių, t.y., **P(X<sub>t</sub> \| X<sub>t-1</sub>)**
 - Netgi ir nagrinėjant pirmos eilės procesus, turime problemą: laiko momentų t gali būti be galo daug, todėl ir X reikšmių gali būti begalybė begalybių (šito geriau nerašyti egzamine ant lapo). Kad išvengtume šios problemos, darysime prielaidą, kad problema gali būti nusakoma stacionariu procesu.
-- **Stacionarus procesas** - procesas, kuris keičia būsenos reikšmes pagal iš anksto nustatytą ir žinomą dėsnį. Tai reiškia, kad P(X<sub>t</sub> | X<sub>t-1</sub>) bus lygiai tokia pati visiems t, todėl užtenka sumodeliuoti vieną salyginės tikimybės reikšmių lentelę.
+- **Stacionarus procesas** - procesas, kuris keičia būsenos reikšmes pagal iš anksto nustatytą ir žinomą dėsnį. Tai reiškia, kad P(X<sub>t</sub> \| X<sub>t-1</sub>) bus lygiai tokia pati visiems t, todėl užtenka sumodeliuoti vieną salyginės tikimybės reikšmių lentelę.
 
 ## 15. Mokymasis naudojant stebėjimus (Chapter 18)
 
@@ -189,4 +189,4 @@
 - **Language models**: models that predict the probability distribution of language expressions.
 - It is more fruitful to define a natural language model as a **probability distribution over sentences** rather than a definitive set
 - n-gram - n ilgio simbolių seka
-- n-gram modelis - apibrėžtas kaip n-1 lygmens Markovo grandinė, kur P(c<sub>1:N</sub>) = ∏ P(c<sub>i</sub> | c<sub>i-2:i-1</sub>)
+- n-gram modelis - apibrėžtas kaip n-1 lygmens Markovo grandinė, kur P(c<sub>1:N</sub>) = ∏ P(c<sub>i</sub> \| c<sub>i-2:i-1</sub>)
