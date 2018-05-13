@@ -124,4 +124,51 @@
 
 ## Naudotojų istorijų vertinimas ir darbų atlikimo greitis
 
-- something
+- **R-D-C-T**: Requirements - Design - Coding - Testing
+- `release size / velocity = sprint count`
+- Visi iteracinio proceso artefaktai fiksuotu laiko momentu yra aprašomi skirtingu detalumu. Tipiniu atveju, organizacijose planavimas vykdomas trimis lygiais:
+  - **Portfolio žurnalas** - Gali aprašyti organizacijos vykdomus projektus
+  - **Produkto žurnalas**
+    - PB istorijų įvertinas - standartinė grooming veikla
+    - PBI vertinimas vyksta:
+      - „Vertinimų“ susitikimo metu (kažkada gi reikia įsivertinti )
+      - Planuojant release versiją
+      - Product owner‘iui pridedant naują istoriją sprinto/iteracijos metu
+    - Istorijas vertinti reikia dėl šių priežasčių:
+      - Fiksuotu laiko momentu naudotojo istorijos yra skirtingų dydžių
+      - Įgūdžiams susiformuoti reikia laiko, vienodo dydžio istorijų sudarymas pakankamai sudėtingas
+      - Vertinant istorijas yra diskutuojama, svarstoma ir ginama nuomonė.
+  - **Iteracijos žurnalas** - Iteracijos užduotys yra matuojamos „idealiomis“ valandomis/taškais
+- Produkto žurnalo istorijų **vertinimas** grindžiamas šiais **principais**:
+  - **Komandiniu** užduočių vertinimu - Lead, architektas, projekto vadovas, product owner‘is, scrum master‘is ar pan. atlieka TIK pradinį istorijų įvertinimą; Kiti komandos nariai vertinimą koreguoja.
+  - Dėmesį kreipiant į **accuracy** bet ne precision
+  - Naudojimą **santykinių**, bet ne absoliučių dydžių - žurnalas aprašo santykinius istorijų įverčius, t. y. visiškai nesvarbu koks yra tūris, svarbu tai, kiek istorija yra „didesnė/sudėtingesnė“ už lyginamąją.
+  - Į tai, kad istorijos vertinimas **nėra kontraktas**
+- PB istorijų **matavimo vienetai**. Tipiniu atveju yra naudojami du matai:
+  - **Taškai** - apjungia du faktorius t.y. sudėtingumą ir istorijos dydį. Puikiai tinka santykiniam istorijų vertinimui.
+  - **Idealios dienos** - Idealios dienos nėra tas pats, kas praėjusios dienos - 24 val. tikslumu.
+- **Planning poker:**
+  - Apsprendžiamas matavimo vienetas:
+    - 2,4,8,16 ir t.t.
+    - 1,2,3,5,8 ir t.t. (Fibonatis)
+    - Kt.
+  - Dalyvauja visa komanda,
+  - Lead, Product owner pristato, apibūdina, paaiškina PBI
+  - Komanda kiekvieną PBI vertina
+  - Scrum master prižiūri procesą, stebi tuos kurie turi kitokią nuomonę, juos įtraukia į diskusiją
+- **Įvertinimo tikslinimas**:
+  - Lyginami visų komandos narių įvertinimai tai pačiai istorijai
+  - Kuo didesnis skirtumas tarp vertinimų, tuo mažiau galima juo pasitikėti
+  - Prielaidomis negalima remtis - viskas turi būti aišku
+  - Kiekviena **prielaida** yra klaidinga tol, kol jos neišaiškina product owner‘is
+  - Kiekvienas istorijos įvertinimas apima visus procesus **pradedant kodavimu baigiant dokumentacija**
+  - Istorijų įsivertinimas yra **PAžADAS** užsakovui, KIEK laiko užtruks programinės įrangos **PALEIDIMAS**
+- **Prioritetų perplanavimas** - kai kliento deadline nesutampa su įvertinimu:
+  - Atmeskite neesminį funkcionalumą
+  - Neatidėliokite versijos išleidimo, kuo artimesnis išleidimo laikas, tuo labiau jūs ir komanda esate susifokusavę į darbą
+  - Fokusuokitės TIK į ESMINĮ funkcionalumą kurio reikia, kad programinė įranga veiktų
+  - Kas jei užsakovas nenusileidžia dėl laiko? - Bent jau buvote sąžiningas ir atviras – metas palikti projektą, arba samdyti papildomus resursus (papildomos grėsmės)
+- **Papildomi resursai**:
+  - Negalioja taisyklė „dvigubai žmonių – du kartus greitesnis kūrimas“
+- Efektyvumas (**team velocity**) - procentinė darbo dienų ir produktyvių darbo dienų išraiška
+  - Kuo trumpesnė iteracija tuo greičiau gausite realų efektyvumo įvertį (1 - nežinoma)
