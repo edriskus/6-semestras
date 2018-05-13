@@ -80,7 +80,42 @@
 
 ## Istorijų žurnalas
 
-- something
+- PB - Product backlog - prioritetizuotas naudotojų istorijų sąrašas; koks ir kokia tvarka funkcionalumas turi būti įgyvendinamas
+- Įrašų tipai:
+  - **Feature** (Savybė):
+    - Kaip klientus aptarnaujantis asmuo noriu turėti galimybę suteikti aptarnavimo užklausai numerį, tam kad galėčiau valdyti užklausą ir su ja susijusius duomenis.
+  - **Change** (Pakeitimas):
+    - Kaip klientus aptarnaujantis asmuo norėčiau, kad paieškos rezultatai būtų surūšiuoti pagal kliento pavardę, bet ne užklausos numerį
+  - **Defect** (Defektas):
+    - Ištaisyti defektą numeriu #157 (kažkokioje sistemoje), tam, kad paieškoje naudojami specialieji simboliai „nenulaužtų“ sistemos darbo.
+  - **Technical work** (technologinis sprendimas):
+    - Migruoti į paskutiniąją Oracle RDBMS versiją.
+  - **Knowledge acquisition** (žinių gavyba):
+    - Įgyvendinti POC palyginant dvi architektūras ir paleisti 3 testus siekiu išsiaiškinti kuri iš jų yra tinkamiausia.
+- **DEEP**:
+  - Detailed appropriately: Fiksuotu laiko momentu, PB įrašai bus detalizuoti skirtingai: bus skirtinguose abstrakcijos lygiuose (Epic->Task)
+  - Emergent: Vykdant programinės įrangos kūrimo arba palaikymo darbus PB niekada nėra išbaigtas ar nekintantis; Kaip tik priešingai, - nuolat atnaujinamas atsižvelgiant į bet kokią ekonominę naudą, kuri kinta nuolatos
+  - Estimated: Kiekvienas įrašas žurnale turi turėti įvertį nurodantį reikalingas pastangas darbui atlikti
+  - Prioritized - Tipiniu atveju prioritetai suteikiami tiems įrašams kurie numatyti keliems artimiausiems sprintams / iteracijoms
+- **Grooming**:
+  - Proaktyvus veiklų valdymas, organizavimas, administravimas ir kt.
+  - Dalyvauja visi, tačiau sprendžia product owner / lead / stakeholder
+  - Tipiniu atveju grooming veiklos sudaro apie **10 proc.** kiekvienos iteracijos / sprinto laiko.
+  - Įrašai **įvertinami**, **detalizuojami** ir **prioritetizuojami** atsižvelgiant į esamus išteklius ir technologinius ribojimus.
+- **PB grooming** tikslas tinkamai paruošti istorijas sprintui:
+  - Kuriama **pridėtinė vertė** yra aiškiai aprašyta
+  - **Detalės yra suvoktos** ir komanda gali aiškiai įsivertinti kiek truks istorijos įgyvendinimas
+  - Visos priklausomybės yra aiškios, **nėra** jokių kitų **išorinių priklausomybių** kurios trukdytų įgyvendinimui
+  - Komanda **turi** sprinto reikalaujamą **kompetenciją**
+  - Visa iteracija yra įvertinta, istorijos pakankamai mažos ir **gali būti įgyvendintos vieno sprinto metu**
+  - **Confirmation** kriterijai yra aiškūs ir testuotini
+  - **Performance** kriterijai yra aiškūs ir testuotini
+  - Komanda suvokia kaip bus **demonstruojama** versija sprinto pabaigoje
+- Siekiu užtikrinti savalaikį ir tinkamą srautą PB kuriamas darbų srautas turi būti nagrinėjamas šiais aspektais:
+  - **Release srautas**. PBI skirstomos į 2-3 dalis:
+    - Turi būti
+    - Pageidautina (Istorijos keliaus į 2 release arba bus įgyvendintos 1-ame)
+    - Tikrai nebus
 
 ## Naudotojų istorijų vertinimas ir darbų atlikimo greitis
 
