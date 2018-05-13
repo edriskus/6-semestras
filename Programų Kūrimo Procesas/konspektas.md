@@ -116,6 +116,11 @@
     - Turi būti
     - Pageidautina (Istorijos keliaus į 2 release arba bus įgyvendintos 1-ame)
     - Tikrai nebus
+  - **Iteracijų srautas**: PB turi leisti planuoti iteracijas, ko pasėkoje būsimas funkcionalumas visiems tampa aiškus (testuotinas)
+- **Trijų lygių PB modelis** (three-level enterprise backlog model):
+  - Epics (portfolio backlog)
+  - Program (features backlog)
+  - Team (backlog of sprintable user sories)
 
 ## Naudotojų istorijų vertinimas ir darbų atlikimo greitis
 
