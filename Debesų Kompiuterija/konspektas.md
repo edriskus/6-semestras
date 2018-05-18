@@ -65,7 +65,44 @@
 
 ## Kada galima naudoti Debesų Kompiuteriją
 
-- something
+- Apsisprendimas naudoti ar nenaudoti debesų kompiuterijos paslaugas priklauso nuo daugelio veiksnių, įskaitant:
+  - Kainos / naudos santykis
+  - Paslaugos teikimo greitis
+  - Kokius resursus reikia naudoti
+  - Ar turimi duomenys turi būti specifiškai saugomi
+  - Organizacijos verslo ir IT struktūra
+- Nereikia įsivaizduoti, kad debesų kompiuterija yra tinkama visiems gyvenimo atvejams. Yra daug atvejų, kai debesų kompiuterija gali būti **netinkama**:
+  - Dirbant su duomenimis, apsaugotais įstatymo
+  - Vyriausybė (FTP) turi teisę pasiekti duomenis debesyje
+  - Geopolitiniai klausimai (Kanados duomenys negali gulėti JAV serveriuose)
+  - Jei turite programą, kuri reikalauja specialios techninės įrangos, mikroschemų arba tvarkyklių, debesų sprendimai gali būti netinkami.
+  - Jei reikia detaliai kontroliuoti atmintį, procesoriaus, kietojo disko arba kitus resursus, tuomet debesis nėra tinkama terpė jūsų programai.
+  - Dinaminis atminties išplėtimas gal eksponentiškai pakelti kainą
+- Daug kas iš senelių girdėjo frazę "**jei daiktas nėra sugedęs, tai nereikia jo taisyti**." Ir senelis yra teisus. Jei jūsų dabartinis sprendimas tinkamai atlieka savo funkcijas, kodėl ji reikia taisyti arba perdaryti?
+- Debesų kompiuterijos **pliusai:**
+  - Paprastumas
+  - Scalability
+  - Patikimi tiekėjai (Google, Amazon, ...)
+  - Atlaisvina vidinius įmonės HR
+  - Saugumas
+  - Įvykių registravimas
+
+---
+
+- **LAMP** reiškia šių populiarių komponentų rinkinį:
+  - Linux atviro kodo operacinė sistema
+  - Apache atviro kodo žiniatinklio serveris
+  - MySQL atviro kodo Struktūrinių užklausų kalba (SQL) reliacinių duomenų bazių interneto serveris
+  - PHP/Perl/Python programavimo kalba
+- **LAMP problemos:**
+  - Neefektyvus gijų panaudojimas (arba nėra, arba sukonfigūruota lievai)
+  - MySQL nesiscalina
+
+---
+
+- Cloud **saugumo** problemos:
+  - Viskas kas įdedama į debesis gali būti prieinami visiems
+  - Programišiai paprastai nėra geri žmonės.
 
 ## Debesų kompiuterijos standartai
 
