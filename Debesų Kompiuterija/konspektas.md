@@ -106,4 +106,31 @@
 
 ## Debesų kompiuterijos standartai
 
-- something
+- **Komunikacija**:
+  - **HTTP** - [Interneto Technologijos](https://edriskus.github.io/6-semestras/Interneto%20Technologijos/konspektas)
+  - **XMPP** (Extensible Messaging and Presence Protocol) - leidžia realizuoti dvipusį ryšio ir eliminuoją pastovų žinučių siuntinėjimą (polling ). XMPP didžiausia problema yra ta, kad **tai nėra HTTP**, jie net nėra panašūs. Yra manoma, kad nauji standartai turi būti grindžiami esamais interneto standartais, ir kol HTTP veikia patenkinamai, XMPP nebus tobulas, ypač debesų kompiuterijai, koks geras jis bebūtų.
+- **Saugumas:**
+  - **SSL** (Secure Sockets Layer) - Norėdami sukurti SSL ryšį, interneto serveris turi turėti SSL sertifikatą. Kai debesų kompiuterijos paslaugų teikėjas pradeda SSL sesiją, jie turi pateikti informaciją apie bendrovės ir interneto svetainės tapatybes. Vėliau teikėjo kompiuteris sukuria du šifravimo raktus - viešąjį raktą ir privatų raktą.
+    1. Naršyklė patikrina svetainės SSL sertifikatą, kad įsitikinti, jog svetainė, prie kurios jūs jungiatės, yra tikra, o ne kažkas kitas perėmė jos valdymą, ar sukūrė kloną.
+    2. Naršyklė ir interneto svetainė nusprendžia, kokio tipo šifravimą naudoti.
+    3. Naršyklė ir serveris siunčia vienas kitam unikalius kodus, kurie bus naudojami šifruojant informaciją kuri turi būti išsiųsta.
+    4. Naršyklė ir serveris naudoja šifravimą ir inicijuoja informacijos mainus.
+    5. Naršyklė rodo šifravimo piktogramą ir interneto puslapiai yra perduodami šifruotu pavidalu.
+  - **OpenID** - atviro kodo sprendimas, realizuojantis galimybę prieiti prie įvairių interneto svetainių su unikaliais vartotojo vardais ir slaptažodžiais.
+  - **PCI DSS** - Mokėjimo kortelių duomenų saugumo standarto (Payment Card Industry Data Security Standards - PCI DSS) 2.2.1 reikalavimas
+- **Klientai**:
+  - **HTML** - [Interneto Technologijos](https://edriskus.github.io/6-semestras/Interneto%20Technologijos/konspektas)
+  - Dynamic HTML, or **DHTML**, is an *umbrella* term for a collection of technologies used together to create interactive and animated websites by using a combination of a static markup language (such as HTML), a client-side scripting language (such as JavaScript), a presentation definition language (such as CSS), and the Document Object Model (DOM).
+- **Infrastruktūra:**
+  - **Virtualizacija:**
+    - Kaip **VMware** ir partnerių pastangų rezultatas buvo sukurtas standartas vadinamas Atviru Virtualizacijos formatu (**Open Virtualization Format - OVF**). OVF aprašoma, kaip virtualūs prietaisai gali būti aprašomi nuo kūrėjo nepriklausomu būdu, kad juos galima būtų paleisti ant bet kurio hypervizorio.
+- **Duomenys:**
+  - **JSON** (JavaScript Object Notation) - Tai labai geras pakaitalas XML, kai JavaScript yra naudojamas realizuojant duomenų mainus, pavyzdžiui, dirbant su AJAX.
+  - Extensible Markup Language (**XML**) yra standartinis būdas koduoti tekstus ir duomenis. Labai panašu į HTML, tik yra pora skirtumų:
+    - Formos ir turinio atskyrimas. HTML naudoja žymes, apibrėžiančias teksto išvaizdą, o XML naudoja žymės apibrėžiančias struktūrą ir duomenų turinį. Atskiri taikymo variantai bus nurodomi programoje arba stiliaus lape.
+    - XML yra praplečiamas. Naujos žymės gali būti apibrėžtos konkrečios programos kūrėjų, HTML žymes apibrėžia W3C.
+- **Web paslaugos**:
+  - Representational state transfer (**REST**) yra būdas gauti informaciją iš interneto svetainės skaitant pasirinktą tinklalapį, kuriame yra **XML** failas, aprašantis norimą turinį.
+  - **SOAP** (Simple Object Access Protocol) yra būdas, leidžiantis programai veikiančiai vienos rūšies operacinėje sistemoje (pavyzdžiui, Windows 7) susisiekti su kita programa, veikiančia tos pačios, ar kitos rūšies operacinėje sistemoje (pavyzdžiui, Linux), naudojant HTTP ir XML kaip įrankius keistis informacijai.
+    - SOAP tiksliai apibūdina, kaip koduoti HTTP antraštę ir XML failą, kad viename kompiuteryje esanti programa galėtų susisiekti su programa kitame kompiuteryje ir perduoti jai informaciją. Jis taip pat paaiškina, kaip kviečiama programa gali grąžinti atsakymą.
+    - Vienas iš SOAP privalumų yra tai, kad programos užklausos lengviau pereina per užkardas, kurios paprastai blokuoja specifinius duomenų srautus. HTTP užklausos paprastai yra praleidžiamos per ugniasienes, programos, naudojančios SOAP gali bendrauti su programomis bet kur, kur veikia interneto ryšis.
