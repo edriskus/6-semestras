@@ -4,6 +4,7 @@
 - [Dirbtinis Intelektas ir Žinių Sistemos](https://edriskus.github.io/6-semestras/Dirbtinis%20Intelektas%20ir%20%C5%BDini%C5%B3%20Sistemos/konspektas)
 - [Programų Kūrimo Procesas](https://edriskus.github.io/6-semestras/Program%C5%B3%20K%C5%ABrimo%20Procesas/konspektas)
 - [Debesų Kompiuterija](https://edriskus.github.io/6-semestras/Debes%C5%B3%20Kompiuterija/konspektas)
+- [Lygiagretusis Programavimas](https://edriskus.github.io/6-semestras/Lygiagretusis%20Programavimas/konspektas)
 
 ```none
 "THE BEER-WARE LICENSE" (Revision 42):
