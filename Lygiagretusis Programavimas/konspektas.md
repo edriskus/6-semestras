@@ -93,7 +93,7 @@ Jei reikės - koliokviumo konspektas [čia](https://edriskus.github.io/6-semestr
 ## 4. Aplikacijų programavimo sąsaja OpenMP
 
 - *Paskirtis, veikimo principai, privalumai, trūkumai*
-  - **OpenMP** (Open specification for Multi-Processing) - priemonė, kurios pagalba iš nuoseklios programos būtų galima gauti lygiagrečiąją paprasčiau – beveik automatiškai
+  - **OpenMP** (Open specification for Multi-Processing) - priemonė, kurios pagalba iš nuoseklios programos būtų galima gauti lygiagrečiąją paprasčiau – beveik automatiškai. **Bendrosios atminties programavimas**.
   - **Privalumai**:
     - OpenMP gali “išlygiagretinti” (parallelize) daugybę nuoseklių programų tik su keletu papildomų paprastų instrukcijų pagalba.
     - Tos instrukcijos yra aukšto lygio (high-level API), nurodo lygiagretumą ir duomenų priklausomybę
@@ -138,13 +138,55 @@ Jei reikės - koliokviumo konspektas [čia](https://edriskus.github.io/6-semestr
 ## 5. Standartas MPI
 
 - *Paskirtis, veikimo principai (4 pagrindinės koncepcijos), privalumai, trūkumai*
-  - ...
+  - **Paskirstytos atminties programavimas**
+  - Kiekvienas iš paleistų lygiagrečiųjų procesų vykdo tą patį programinį kodą. Visi procesai automatiškai yra numeruojami ir gauna unikalų numerį – ID – angl. rank, kurį kiekvienas procesas gali sužinoti MPI funkcijos pagalba
+  - **Privalumai:**
+    - **Standartas**. Šiuo metu MPI yra pripažintas standartas, kuris išstūmė kitus paskirstytos atminties programavimo (su pranešimų persiuntimu) įrankius ir bibliotekas.
+    - **Portatyvumas**. MPI standartą realizuojančios bibliotekos (nemokamos ir komercinės) egzistuoja visose platformose. Todėl MPI programa be pakeitimų gali būti perkelta iš vieno tipo kompiuterio į kito tipo kompiuterį.
+    - **Našumas**. MPI programų kompiliavimas su gamintųjų (angl. vendor) MPI realizacijomis, optimizuotomis atitinkamose platformose, leidžia gerinti pačių lygiagrečiųjų programų efektyvumą.
+    - **Funkcionalumas**. Vien tik MPI-1 standartas apibrėžia virš 120 funkcijų, kurios leidžia programuotojui realizuoti ne tik bazines duomenų persiuntimo operacijas, bet ir sudėtingus grupinius duomenų mainus. Be to, šiuo metu jau yra sukurta (ir tebekuriama) nemažai įvairių aukštesnio lygio lygiagrečiųjų bibliotekų (pvz., matematinių), kurios remiasi išlygiagretinimu su MPI.
+  - **Trūkumai:**
+    - ...
+  - MPI branduolį (MPI-1) sudaro keturios pagrindinės **koncepcijos**:
+    - **Duomenų siuntimo operacijos (funkcijos)**:
+      - “point-to-point” duomenų siuntimo operacijos (funkcijos): vienas procesas siunčia (siuntėjas) duomenis kitam procesui (gavėjas);
+      - Kolektyvinės duomenų siuntimo operacijos (funkcijos): keli procesai (grupė) siunčia ir gauna duomenis vienu metu (pvz., surenka, paskirsto).
+    - **Komunikatoriai** - specialus MPI objektas, kuris apibrėžia kažkokią lygiagrečiųjų procesų grupę ir priskiria jai unikalų (tarp visų kitų komunikatorių) požymį. Todėl ta pati procesų grupė gali turėti kelis komunikatorius.
+    - **Siunčiamų duomenų tipai (sudarymo funkcijos)**:
+      - MPI duomenų tipai leidžia sumažinti duomenų kopijavimo sąnaudas ir naudoti skaičiavimuose heterogenines sistemas (pvz., kartu naudoti 32 ir 64-bitų kompiuterius).
+      - MPI leidžia programuotojui pačiam apibrėžti sudėtingesnius tipus (angl. derived data types).
+    - **Virtualios topologijos** - leidžia programuotojui sudėlioti MPI procesų grupę pagal tam tikrą geometrinę topologiją (pvz., dekartinį tinklą, grafą).
 - *6 pagrindinės MPI funkcijos*
-  - ...
+  - `int MPI_Init( int *argc, char ***argv);` - Inicializuoja MPI vykdymo aplinką (MPI execution environment)
+  - `int MPI_Finalize(void);` - Visos MPI vykdomos operacijos (pvz., duomenų persiuntimas) turi pasibaigti iki šios funkcijos iškvietimo. Po šios funkcijos negalima kviesti kitų MPI funkcijų, kitaip bus gauta klaida.
+  - `int MPI_Comm_size (MPI_Comm comm, int *size);` - Funkcija nustato procesų skaičių komunikatoriuje comm ir grąžina jį į size. Programos pradžioje naudojama su MPI_COMM_WORLD komunikatoriumi tam, kad nustatyti programą vykdančių lygiagrečių procesų skaičių (t.y. kiek jų paleido vartotojas).
+  - `int MPI_Comm_rank(MPI_Comm comm, int *rank);` - Funkcija nustato proceso, iškvietusio ją, unikalų numerį (ID, rank’a) nurodytame komunikatoriuje comm ir grąžina jį į rank.
+  - `int MPI_Send( void *buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm);`
+    - **buf** – buferio, kuriame laikomi siunčiami duomenys, pradžios adresas (rodyklė),
+    - **count** – siunčiamų duomenų elementų kiekis (skaičius),
+    - **datatype** – siunčiamų duomenų elementų tipas (MPI tipas),
+    - **dest** – proceso, kuriam siunčiamas šis pranešimas (t.y. gavėjo), numeris (rank’as) komunikatoriuje comm,
+    - **tag** – šiam pranešimui programuotojo suteikiamas numeris (paprastai, kad butų galima šį pranešimą atskirti nuo kitų, bet jis (tag) nebūtinai turi būti unikalus, t.y. gali būti ir vienodas visiems siunčiamiems pranešimams),
+    - **comm** – komunikatorius, kuriam priklauso abu procesai (ir siuntėjas, ir gavėjas).
+  - `int MPI_Recv( void *buf, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm comm, MPI_Status *status);`
+    - **buf** – buferio, į kurį bus patalpinti atsiusti duomenys, pradžios adresas (rodyklė),
+    - **count** – gaunamų duomenų elementų kiekis (skaičius),
+    - **datatype** – gaunamų duomenų elementų tipas (MPI tipas),
+    - **source** – proceso, iš kurio turi būti gautas šis pranešimas (t.y. siuntėjo), numeris (rank’as) komunikatoriuje comm, arba MPI_ANY_SOURCE konstanta (wild card), jei šitoje programos vietoje pranešimas gali būti priimtas iš pirmo atsiuntusio proceso,
+    - **tag** – gaunamo pranešimo numeris (šis numeris turi sutapti su tag numeriu, nurodytu siunčiant) arba MPI_ANY_TAG konstanta, jei nenorima tikrinti gaunamo pranešimo numerį (bus gautas pranešimas su bet kokiu tag numeriu).
+    - **comm** – komunikatorius, kuriam priklauso abu procesai,
+    - **status** – rodyklė į MPI duomenų struktūrą, į kurią bus įrašyti įvykusios duomenų gavimo operacijos duomenys (source, tag, message size).
 - *Blokuotos ir neblokuotos MPI funkcijos*
-  - ...
-- *Mokėjimas paaiškinti MPI kodą*
-  - ...
+  - **Blokuota** (blocking) MPI funkcija blokuoja proceso, iškvietusio ją, vykdymą, kol šios funkcijos apibrėžta operacija nebus užbaigta.
+    - `MPI_Ssend`
+    - `MPI_Bsend`
+    - `MPI_Send`
+    - `MPI_Rsend`
+  - **Neblokuota** (blocking) MPI funkcija nelaukia operacijos pabaigos, o perduoda jos vykdymą MPI bibliotekai, kuri atliks ją, kai tik tai taps įmanoma (be papildomų nurodymų iš programuotojo), ir pasibaigia.
+    - `MPI_Issend`
+    - `MPI_Ibsend`
+    - `MPI_Isend`
+    - `MPI_Irsend`
 
 ## 6. NVIDIA GPU įrenginio architektūra
 
