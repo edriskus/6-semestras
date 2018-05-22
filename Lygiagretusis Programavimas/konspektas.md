@@ -190,12 +190,23 @@ Jei reikės - koliokviumo konspektas [čia](https://edriskus.github.io/6-semestr
 
 ## 6. NVIDIA GPU įrenginio architektūra
 
-- *Skaičiavimų vienetai*
-  - ...
+- *Skaičiavimų vienetai (ALU)*
+  - GPU susidaro iš 𝑁<sub>𝑆𝑀</sub> multiprocesorių (toliau SM, angl. streaming multiprocessor)
+  - Vienas multiprocesorius turi 𝑁<sub>𝑚</sub> branduolių, sudarytų iš skaičiavimų modulių. Moduliai gali būti skirtingi - tai priklauso nuo konkrečios plokštės GPU architektūros.
+  - Visi skaičiavimai ir duomenų siuntimai yra atliekami porcijomis, specialiais gijų apdorojimo vienetais, kurie operuoja gijų porcijomis (angl. warp).
+  - Programuotojo užduotis – parašyti kodą taip, kad gijų porcijos veiktų efektyviai, remiantis jų veikimo principais ir NVIDIA rekomendacijomis.
 - *Atminties struktūra*
-  - ...
+  - **Pagrindinė atmintis**. Iš jos skaityti ir į ją rašyti gali visi CUDA branduoliai lygiagrečiai. 
+    - Pagrindinė atmintis naudojama globaliajai ir lokaliajai atmintims saugoti. Jos skiriasi tik tuo, kad lokalioji yra rezervuota tam tikroms gijoms o iš globaliosios gali skaityti ir GPU ir CPU (kopijuojant).
+  - Kiekvienas GPU multiprocesorius turi **greitąją atmintį** (padalintą į kelias rūšis), paprastai tai yra 10-100 kilobaitų eilės dydžio atmintis. Ją galima suskirstyti į šiuos tipus:
+    - **Registrai**: Šiuo metu skaičiavimuose dalyvaujantiems duomenims talpinti skirta atmintis
+    - **Bendroji atmintis**: . Yra prieinama skirtingų vieno multiprocesoriaus gijų, tačiau vieno multiprocesoriaus nėra prieinama kito multiprocesoriaus skaičiavimų moduliams.
+    - **L1 cache atmintis**: – automatizuota bendrosios atminties versija, kurios panaudojimu rūpinasi kompiliatorius.
+  - **L2 cache atmintis** – spartinančioji atmintis, kuri yra bendra visiems multiprocesoriams, greitesnę už pagrindinę bet lėtesnė už greitąją.
 - *Duomenų srauto schema kai skaičiavimuose naudojamas GPU*
-  - ...
+  1. Duomenys iš CPU atmintis kopijuojami į GPU amtintį
+  2. GPU programa užkraunama ir paleidžiama, kuo efektyviau išnaudojant spartinančiąją atmintį (cache)
+  3. Rezultatas kopijuojamas iš GPU atminties į CPU amtintį
 
 ## 7. CUDA programavimo modelis
 
