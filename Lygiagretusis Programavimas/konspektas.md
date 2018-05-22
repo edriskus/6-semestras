@@ -1,7 +1,5 @@
 # Lygiagretusis programavimas
 
-*WORK IN PROGRESS...*
-
 - [Lygiagretusis programavimas](#lygiagretusis-programavimas)
   - [1. Lygiagrečiųjų algoritmų sudėtingumo teorija](#1-lygiagre%C4%8Di%C5%B3j%C5%B3-algoritm%C5%B3-sud%C4%97tingumo-teorija)
   - [2. Lygiagrečiųjų algoritmų sudarymo etapai](#2-lygiagre%C4%8Di%C5%B3j%C5%B3-algoritm%C5%B3-sudarymo-etapai)
@@ -211,12 +209,19 @@ Jei reikės - koliokviumo konspektas [čia](https://edriskus.github.io/6-semestr
 ## 7. CUDA programavimo modelis
 
 - *Gijos, blokai ir jų loginis išsidėstymas (tinklas)*
-  - ...
+  - Programuotojas apibrėžia užduočių blokus, kurias galima atlikinėti tarpusavyje nepriklausomai, paleidžia specialiąją funkciją - kernelį, visą kita daroma automatiškai.
+  - Programuotojas apibrėžia blokų dydį, jų skaičių ir loginį išsidėstymą
+  - Funkcijos - kernelio viduje programuotojas naudoja specialiuosius kintamuosius, kad nustatyti kiekvienai gijai praklausančius darbus
 - *SIMT principas, gijų porcijų (angl. warp) darbo vykdymo ypatumai*
-  - ...
+  - **SIMT** – angl. Single Instruction Multiple Threads
+  - Kiekvienas multiprocesorius sukuria, apdoroja, sudaro tvarkaraštį, paleidžia gijas grupėmis po 32 gijas, vadinsime jas gijų porcijomis (angl. warps).
+  - Kai multiprocesorius gauna vykdyti vieną arba daugiau užduočių blokų - kiekvienas blokas išskaidomas į gijų porcijas ir kiekviena iš porcijų yra valdoma tvarkaraščio sudarymo ir vykdymo mechanizmais
+  - Viena gijų porcija gali vykdyti tik vieną instrukciją, todėl reikia rūpintis, kad visos gijos vienoje porcijoje tuo pačiu metu atlikinėtų tą pačią instrukciją.
 - *GPU skaičiavimų pajėgumas (angl. compute capability)*
-  - ...
+  - Visi NVIDIA GPU įrenginiai charakterizuojami GPU kartos rodikliu – skaičiavimų pajėgumu, angl. compute capability.
 - *Gijų užimtumas (angl. CUDA occupancy). Gijų skaičius ir CUDA branduolių skaičius*
-  - ...
-- *Mokėjimas paaiškinti CUDA kodą*
-  - ...
+  - Paleistų gijų skaičių **riboja** tai, kad:
+    - vienas multiprocesorius gali paleisti ne daugiau 8 užduočių blokų
+    - Bendras paleistų gijų naudojamų registrų skaičius ir bendros atminties kiekis yra riboti vienam multiprocesriui
+    - Yra maksimalus gijų porcijų skaičius
+  - Paleistų (aktyvių) gijų porcijų (po 32 gijas) skaičiaus ir maksimalaus gijų porcijų skaičiaus santykis vadinamas **CUDA gijų užimtumu** (occupancy)
