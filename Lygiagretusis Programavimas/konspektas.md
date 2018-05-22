@@ -93,21 +93,47 @@ Jei reikės - koliokviumo konspektas [čia](https://edriskus.github.io/6-semestr
 ## 4. Aplikacijų programavimo sąsaja OpenMP
 
 - *Paskirtis, veikimo principai, privalumai, trūkumai*
-  - ...
+  - **OpenMP** (Open specification for Multi-Processing) - priemonė, kurios pagalba iš nuoseklios programos būtų galima gauti lygiagrečiąją paprasčiau – beveik automatiškai
+  - **Privalumai**:
+    - OpenMP gali “išlygiagretinti” (parallelize) daugybę nuoseklių programų tik su keletu papildomų paprastų instrukcijų pagalba.
+    - Tos instrukcijos yra aukšto lygio (high-level API), nurodo lygiagretumą ir duomenų priklausomybę
+    - Bendras (angl. unified) kodas nuosekliai ir lygiagrečiai versijai.
+  - **Trūkumai**:
+    - Neusteikia automatinio išlygiagretinimo.
+    - Neusteikia Garantuoto pagreitėjimo.
+    - Nesuteikia laisvės nuo klaidų, pvz., lenktynių konfliktai (data races).
 - *Direktyvos ir funkcijos:*
-  - ...
-- `#pragma omp parallel`
-  - ...
+  - **Direktyvos**:
+    - Lygiagrečiosios srities (parallel regions)
+    - Užduočių paskirstymo (work sharing)
+    - Sinchronizavimo (synchronization)
+  - Bibliotekos **funkcijos** (runtime functions)
+    - `omp_set_num_threads()` - Nurodyti, sužinoti gijų skaičių
+    - `omp_get_thread_num()` - Gauti gijos ID (unikalų identifikuojantį numerį)
+- `#pragma omp parallel [clause [clause] ...]`
+  - Kai pradinis procesas pasiekia šią direktyvą, jis sukuria gijų grupę ir toliau struktūrinį bloką (vieną sakinį arba sakinių bloką `{...}`) visos gijos atlieka **lygiagrečiai**.
+  - Argumentai [clause]:
+    - `if (scalar_expression)`
+    - `private(list)`
+    - `firstprivate(list)`
+    - `default(shared | none)`
+    - `shared(list)`
+    - `copyin(list)`
+    - `reduction(operator: list)`
+    - `num_threads(integer-expression)`
+  - **Papildomos** užduočių paskirstymo direktyvos, veikiančios `parallel` viduje:
+    - `#pragma omp for` - Lygiagrečiąją sritį vykdančios gijos lygiagrečiai atlieka ciklo iteracijas. Iteracijų paskirstymo būdą nusako parametras `schedule` (`static | dynamic | guided`)
+    - `#pragma omp sections` (ir `#pragma omp section` viduje) - Lygiagrečiąją sritį vykdančios gijos lygiagrečiai atlieka skirtingas sekcijas (struktūrinius blokus). Kiekviena sekcija bus atlikta tik vieną kartą vienos iš grupės gijų.
+    - `#pragma omp single` - Pirmoji gija, kuri vykdydama lygiagrečiąją sritį pasieks šią direktyvą, imsis vykdyti nurodytą struktūrinį bloką, o kitos gijos jį praleis ir lauks konstrukcijos pabaigoje (jei nenurodytas argumentas `nowait`).
 - `#pragma omp barrier`
-  - ...
+  - Kai gija pasiekia šią direktyvą, ji sustoja ir laukia, kol visos kitos šios lygiagrečiosios srities gijos pasieks šį barjerą.
+  - Kai tai atsitiks, visos šios gijos tęs programos vykdymą toliau.
+  - OpenMP pats įstato (**neišreikštinius**) barjerus užduočių paskirstymo (`for`, `sections`, `single`) konstrukcijų pabaigoje, jei nenurodytas argumentas `nowait`.
 - `#pragma omp for schedule()`
-  - ...
-- `omp_get_num_threads()`
-  - ...
-- `omp_get_thread_num()`
-  - ...
-- `Mokėjimas paaiškinti OpenMP kodą`
-  - ...
+  - `schedule(static [,chunk])` - Iteracijų blokai (po chunk iteracijų) statiškai (prieš ciklo vykdymą) cikliniu būdu **paskirstomi tarp gijų**. Kai bloko dydis (chunk) nenurodytas, imamas maksimalus – Num_iter / num_threads. Pvz., Num_iter = 16, num_threads = 4
+  - `schedule(dynamic[,chunk])` - Iteracijų blokai (po chunk iteracijų) dinamiškai (ciklo vykdymo metu) yra **priskiriami atsilaisvinančioms** (atlikusioms anksčiau priskirto bloko iteracijas) gijoms. Jei bloko dydis nenurodytas, jis imamas lygus vienetui.
+  - `schedule(guided[,chunk])` - **Mažėjantys iteracijų blokai** yra dinamiškai priskiriami gijoms. Bloko dydis=max(Number_iterations_remaining / num_threads, chunk). Pagal nutylėjimą: default chunk=1.
+  - `schedule(runtime)` - Programos vykdymo metų tvarkaraščio tipas (schedule) ir bloko dydis (chunk) yra **paimami iš aplinkos** kintamojo OMP_SCHEDULE (environment variable).
 
 ## 5. Standartas MPI
 
