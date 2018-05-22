@@ -62,12 +62,17 @@ Jei reikės - koliokviumo konspektas [čia](https://edriskus.github.io/6-semestr
 
 ## 2. Lygiagrečiųjų algoritmų sudarymo etapai
 
+- Šiuolaikiniai kompiliatoriai, turintys automatinio išlygiagretimo opciją, bando automatiškai išlygiagretinti tik programoje esančius ciklus. To toli gražu nepakanka - kol kas lygiagrečiųjų algoritmų sudarymas ir programinis realizavimas specialių funkcijų ir direktyvų pagalba lieka programuotojo uždaviniu
 - *Uždavinio išskaidymas*
-  - ...
+  - **Srities/duomenų išskaidymas** (angl. domain decom-position), kai atliekami tie patys veiksmai, tik su skirtingais duomenimis.
+  - **Funkcinis išskaidymas** (angl. functional decomposi-tion), kai atliekamos skirtingos funkcijos su tais pačiais arba skirtingais duomenimis.
 - *Ryšių tarp užduočių nustatymas*
-  - ...
+  - Akivaizdu, kad kiekviena užduotis sprendžiama su tam tikrais pradiniais duomenimis.
+  - Kai bent dalį šių duomenų gauname išsprendę kitą užduotį (arba užduotis), gauname eiliškumo ryšius tarp tų užduočių.
+  - Taigi, reikia nustatyti, kada kokia užduotis gali būti sprendžiama, kokie duomenys jai turi būti perduoti
 - *Užduočių paskirstymas tarp procesų*
-  - ...
+  - Paskirstant užduotis, siekiame, kad užduoties atlikimui reikalingi duomenys jau priklausytų atitinkamam procesui.
+  - Optimalus užduočių paskirstymas tarp P procesų, t.y. tas kuris minimizuoja lygiagretaus algoritmo atlikimo laiką TP, turi siekti kompromiso tarp **minimalių sinchronizacijos ir galimai laukimo kaštų** bei **tolygaus procesorių apkrovimo**.
 
 ## 3. Lygiagrečiųjų algoritmų atvaizdavimas panaudojant grafus
 
