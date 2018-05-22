@@ -76,14 +76,19 @@ Jei reikės - koliokviumo konspektas [čia](https://edriskus.github.io/6-semestr
 
 ## 3. Lygiagrečiųjų algoritmų atvaizdavimas panaudojant grafus
 
+- Lygiagretųjį algoritmą galime atvaizduoti orientuotu acikliniu grafu `G = (T, P)`, kur `T`  yra grafo viršūnių aibė, o `P`  – orientuotų grafo briaunų aibė. Grafo **viršūnių svoriai** rodo šių užduočių vykdymo laiką
 - *Lygiagretumo laipsnis*
-  - ...
+  - Lygiagrečiojo algoritmo **lygiagretumo laipsniu** (angl. degree of concurrency) vadinamas didžiausias skaičius užduočių, kurios gali būti sprendžiamos tuo pačiu metu.
 - *kritinio kelio ilgis*
-  - ...
+  - Lygiagrečiojo algoritmo **kritinio kelio ilgiu** (angl. critical path length) vadinamas jo grafo ilgiausio kelio ilgis. Kelio ilgis apskaičiuojamas kaip jo viršūnių (ir briaunų) svorių suma.
 - *Užduočių tvarkaraštis ir jo sudarymas*
-  - ...
+  - Užduočių sprendimo su P procesais tvarkaraščiu vadinsime vektorių S = {s1, ..., sn }, kurio elementas sj yra j-ajam procesui tekusių nj užduočių aibė.
+  - Tvarkaraštis vadinamas **korektišku**, jei įvykdytos šios dvi sąlygos:
+    - Kiekviena užduotis priklauso tik vienai aibei sj.
+    - Kiekvienos užduoties vykdymo eilė yra didesnė už visų jos pirmtakių užduočių, priklausančių tai pačiai aibei, vykdymo eilę.
 - *Ganto schema*
-  - ...
+  - Lygiagretaus algoritmo užduočių sprendimo tvarkaraštis dažniausiai vaizduojamas **Ganto schema** (angl. Gantt chart).
+  - Ją sudaro P procesų **laiko juostos**, kuriose pažymima, kada kiekviena užduotis pradedama spręsti ir kada baigiama.
 
 ## 4. Aplikacijų programavimo sąsaja OpenMP
 
